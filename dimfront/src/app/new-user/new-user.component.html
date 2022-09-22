@@ -1,0 +1,15 @@
+<div class="mb-3">
+  <label for="userName" class="form-label">User Name</label>
+  <input type="text" class="form-control" #userName>
+</div>
+<div class="mb-3">
+  <label for="userEmail" class="form-label">User Email</label>
+  <input type="email" class="form-control" #userEmail>
+</div>
+<div class="mb-3">
+  <label for="userPassword" class="form-control">User Password</label>
+  <input type="password" class="form-control" #userPassword>
+</div>
+<div>
+  <button type="button" class="btn btn-success" (click)="add(userName.value, userEmail.value, userPassword.value); userName.value=''; userEmail.value=''; userPassword.value='';">Add</button>
+</div>
